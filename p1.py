@@ -4,19 +4,31 @@ fil = open(file, 'r')
 
 datos = fil.readlines()
 
+ln = len(datos)
+
 k = 1
 n = 0
-while n < 10:
+
+while n < ln:
   ss = datos[n]
   ss = ss.replace('\n', '')
   str1 = str(k)+'. '
-  if str1 == ss[:3]:
-    print('-------------' + ss)
-    i = n+1
+  if k < 10:
+    if str1 == ss[:3]:
+      print('-------------' + ss)
+      k = k+1    
+  elif k < 100:
+    if str1 == ss[:4]: 
+      print('-------------' + ss)
+      k = k+1
+  elif k < 1000:
+    if str1 == ss[:5]:
+      print('-------------' + ss)
+      k = k+1
+  else:
+    if str1 == ss[:6]:
+      print('-------------' + ss)
+      k = k+1
 
-    ss = datos[i]
-    ss = ss.replace('\n', '')
-    while len(ss) == 0:
-      
   n = n+1
 
