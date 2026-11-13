@@ -66,7 +66,7 @@ def buscar_y_descargar_pubmed(autor, fecha_inicio, fecha_fin, max_resultados=10)
 # --- EJEMPLO DE USO ---
 if __name__ == "__main__":
     # Parámetros de búsqueda
-    autor_buscar = "Barrios FA"          # Formato usual: Apellido Iniciales
+    autor_buscar = "Prado R"          # Formato usual: Apellido Iniciales
     desde_fecha = "2025/01/01"         # Formato: AAAA/MM/DD
     hasta_fecha = "2026/12/31"
     
